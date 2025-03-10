@@ -1,3 +1,5 @@
+package Clase2;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -85,8 +87,6 @@ public class Main {
         System.out.println("Te imprimo el cuarto valor: " + numerosArray[3]);
         System.out.println("Te imprimo el quinto valor: " + numerosArray[4]);
 
-        int [] nombresArray = {Luis,Fernando,Sergio,Mario,Juan};
-        System.out.println("Te imprimo el nombre en primera posición: " + nombresArray[0]);
 
         //=====================================================
         //  LITERALES EN JAVA
