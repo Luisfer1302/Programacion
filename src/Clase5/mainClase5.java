@@ -39,7 +39,7 @@ public class mainClase5 {
                 System.out.println("Hola, Bienvenido");
                 break;
             case 2:
-                System.out.println("Bro, esto es massico!");
+                System.out.println("Bro, eres un maquina!");
                 break;
             case 3:
                 System.out.println("Saliendo del programa");

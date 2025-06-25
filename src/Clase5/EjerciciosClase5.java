@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class EjerciciosClase5 {
     public static void main(String[] args) {
-        //Ejercicios de Nivel Medio (Fácil)
+        //Clase10_13_05_25_ArrayListBase.Ejercicios de Nivel Medio (Fácil)
 
         //Ejercicio 1: Clasificación de edad
             //Pide al usuario su edad e imprime si es menor de edad, adulto o adulto mayor.
@@ -38,7 +38,7 @@ public class EjerciciosClase5 {
         System.out.println("Número de vocales: " + contador);
          // scanner.close();
 
-        //Ejercicios de Nivel Medio (Intermedio)
+        //Clase10_13_05_25_ArrayListBase.Ejercicios de Nivel Medio (Intermedio)
 
         //Ejercicio 3: Simulación de una calculadora
             //Crea un menú que permita sumar, restar, multiplicar y dividir dos números ingresados por el usuario.
@@ -110,7 +110,7 @@ public class EjerciciosClase5 {
         System.out.println("Acceso bloqueado.");
         //scanner.close();
 
-        //Ejercicios de Nivel Alto (Avanzado)
+        //Clase10_13_05_25_ArrayListBase.Ejercicios de Nivel Alto (Avanzado)
 
         //Ejercicio 6: Adivina el número
             //Genera un número aleatorio entre 1 y 100 y deja que el usuario lo adivine con pistas.
