@@ -12,6 +12,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         HashMap<String, Double> notas = new HashMap<>();
 
+        int suma = sumar(5,4);
+        System.out.println(sumar(5,4));
+
         notas.put("Ana", 8.5);
         notas.put("Ana", 7.0);
         notas.put("Luis", 10.0);
@@ -39,5 +42,9 @@ public class Main {
         for (Map.Entry<String, Double> entrada: ordenado.entrySet()){
             System.out.println(entrada.getKey() + "->" + entrada.getValue());
         }
+    }
+
+    public static int sumar(int n1, int n2){
+        return n1+n2;
     }
 }
