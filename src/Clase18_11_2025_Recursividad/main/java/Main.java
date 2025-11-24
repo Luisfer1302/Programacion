@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Main {
 
     public static int factorial (int n){
@@ -5,6 +7,31 @@ public class Main {
             return 1;
         } else {
             return n * factorial(n-1);
+        }
+    }
+
+    public static int sumarHasta (int n){
+        if (n==0){
+            return 0;
+        }else{
+            return n + sumarHasta(n-1);
+        }
+    }
+
+    public static int sumarDigitos(int n){
+        if(n < 10){
+            return n;
+        }else{
+            return (n%10) + sumarDigitos(n / 10);
+        }
+    }
+
+
+    public static long sumarRecursivo(int[] v, int i){
+        if (i == v.length){
+            return 0;
+        }else{
+            return v[i] + sumarRecursivo(v, i+1);
         }
     }
 
@@ -18,11 +45,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int fN;
+        System.out.println(sumarDigitos(1234));
 
-        fN = factorial(5);
-        System.out.println(fN);
+
+        int n = 10000;
+        int[] datos = new int[n];
+        Random r = new Random();
+
+        for (int i=0; i < n; i++){
+            datos[i] = r.nextInt(100);
+        }
+        //Tiempo iterativo
+        long inicioIter = System.nanoTime();
+        long resultadoIter = sumarIterativo(datos);
+        long finIter = System.nanoTime();
+        long tiempoIter = finIter - inicioIter;
+
+        //Tiempo recursivo
+        long inicioRecu = System.nanoTime();
+        long resultadoRecu = sumarRecursivo(datos, 0);
+        long finRecu = System.nanoTime();
+        long tiempoRecu = finRecu - inicioRecu;
+
+        System.out.println("Resultado Iterativo: " + resultadoIter);
+        System.out.println("Resultado Recursivo: " + resultadoRecu);
+
+        System.out.println("Tiempo Iterativo: " + tiempoIter);
+        System.out.println("Tiempo Recursivo: " + tiempoRecu);
     }
-
-
 }
